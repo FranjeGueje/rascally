@@ -1,0 +1,4 @@
+vdf
+pyinstaller
+python-steamgriddb
+pyside6

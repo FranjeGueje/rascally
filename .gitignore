@@ -1,0 +1,15 @@
+build/
+dist/
+no/
+rascally_gui.spec
+__pycache__/
+*/__pycache__/
+*/*/__pycache__/
+*/*/*/__pycache__/
+*/*/*/*/__pycache__/
+.venv/
+cache/*
+rascal.log
+rascal.log.1
+rascal.log.2
+rascal.log.3

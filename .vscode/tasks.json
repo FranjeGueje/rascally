@@ -1,0 +1,84 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "[LINUX]Compile UI to Python",
+        "type": "shell",
+        "command": "${workspaceFolder}/tasks/compile.sh",
+        "args": ["ui/"],
+        "options": {
+          "cwd": "${workspaceFolder}"
+        },
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      },
+      {
+        "label": "[LINUX]Cleaning",
+        "type": "shell",
+        "command": "${workspaceFolder}/tasks/clean.sh",
+        "args": [],
+        "options": {
+          "cwd": "${workspaceFolder}"
+        },
+        "group": {
+          "kind": "none",
+          "isDefault": true
+        }
+      },
+      {
+        "label": "[LINUX]Build exe",
+        "type": "shell",
+        "command": "${workspaceFolder}/tasks/build_exe.sh",
+        "args": [],
+        "options": {
+          "cwd": "${workspaceFolder}"
+        },
+        "group": {
+          "kind": "none",
+          "isDefault": true
+        }
+      },
+      {
+        "label": "[WIN]Build exe",
+        "type": "shell",
+        "command": "${workspaceFolder}/tasks/build_exeWIN.sh",
+        "args": [],
+        "options": {
+          "cwd": "${workspaceFolder}"
+        },
+        "group": {
+          "kind": "none",
+          "isDefault": true
+        }
+      },
+      {
+        "label": "[WIN]Cleaning",
+        "type": "shell",
+        "command": "${workspaceFolder}/tasks/clean.bat",
+        "args": [],
+        "options": {
+          "cwd": "${workspaceFolder}"
+        },
+        "group": {
+          "kind": "none",
+          "isDefault": true
+        }
+      },
+      {
+        "label": "[WIN]Compile UI to Python",
+        "type": "shell",
+        "command": "C:\\Program Files\\Git\\git-bash.exe",
+        "args": ["${workspaceFolder}/tasks/compile-win.sh","ui/"],
+        "options": {
+          "cwd": "${workspaceFolder}"
+        },
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      }
+    ]
+  }
+  

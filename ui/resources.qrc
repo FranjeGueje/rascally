@@ -1,0 +1,15 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>assets/cross.png</file>
+    <file>assets/icon_1.ico</file>
+  </qresource>
+  <qresource prefix="images">
+    <file>assets/game.jpeg</file>
+    <file>assets/mapache_1.png</file>
+  </qresource>
+  <qresource prefix="engines">
+    <file>assets/epic.png</file>
+    <file>assets/ubisoft.png</file>
+    <file>assets/link.png</file>
+  </qresource>
+</RCC>
