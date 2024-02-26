@@ -1,5 +1,7 @@
 # RASCALLY
-A lightweight client to add games to SteamOS from official Launchers.
+![Rascally](https://raw.githubusercontent.com/FranjeGueje/rascally/master/grid/grid_h.jpeg)
+
+A light and fast client to add games to SteamOS from official Launchers.
 A perfect program to add to SteamOS Gamemode and use it to add your games from official launchers like Epic Game Launcher, Ubisoft Connect and any game with desktop shortcut.
 
 Rascally will not be for you if you are happy with your third party launcher (like Heroic, Bottles, ...) It will be for you if you use official launchers added to Steam and you would like to separate it into different "CompatData" to have different configurations.
@@ -31,7 +33,8 @@ This is the **rascally** configuration. Each of them is listed below with a shor
 * CompatData exceptions: it will be the compatdata that you don't want the engines to scan.
 
 ## Credits
-I dedicate this program, as always, to my wife and children for their patience with my hobby.
+I dedicate this program, as always, to my wife and children for their patience with my hobby not my job.
+
 **Rascally** uses other python libraries:
 * vdf: https://pypi.org/project/vdf/
 * python-steamgriddb: https://pypi.org/project/python-steamgriddb/
