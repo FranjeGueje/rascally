@@ -270,9 +270,15 @@ background-color: rgb(85,0,0);
        <item>
         <widget class="QStackedWidget" name="stackedWidget">
          <widget class="QWidget" name="Wwelcome">
-          <layout class="QHBoxLayout" name="welcomeLayout">
+          <layout class="QVBoxLayout" name="verticalLayout">
            <item>
             <widget class="QFrame" name="welcome_frame">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>16777215</height>
+              </size>
+             </property>
              <property name="styleSheet">
               <string notr="true">background-image: url(:/images/assets/mapache_1.png);
 background-repeat: no-repeat;
@@ -284,6 +290,38 @@ background-attachment: fixed;</string>
              </property>
              <property name="frameShadow">
               <enum>QFrame::Raised</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>10</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Noto Serif Armenian Medium</family>
+               <pointsize>10</pointsize>
+               <italic>true</italic>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: grey;</string>
+             </property>
+             <property name="text">
+              <string>Designed and developed by Franje-Gueje                                                                                                                  https://github.com/FranjeGueje/rascally       </string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
              </property>
             </widget>
            </item>
