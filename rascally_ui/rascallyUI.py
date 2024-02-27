@@ -29,7 +29,7 @@ from rascally_ui.RascalDialog import RascalDialog
 from rascally import Rascally, LauncherEngine, BasicGame
 
 name = 'Rascally'
-version = '0.1.0'
+version = '0.1.1'
 
 class Rascally_UI(QMainWindow, Ui_Rascally, Rascally):
 
@@ -143,11 +143,13 @@ class Rascally_UI(QMainWindow, Ui_Rascally, Rascally):
 
 NOTICE!
 Important: Remember to select the desired compatibility on Steam for this game.""", tipo='I')
+                self.openGameProperties(id)
             else:
                 RascalDialog(mensaje="""Game added to Steam Library correctly.
 
 NOTICE!
 Important: As you selected the "CLONE_SYMLINK" mode you should select the SAME compatibility tool for this game.""", tipo='I')
+                self.openGameProperties(id)
         else:
             RascalDialog(mensaje="Game NOT added to Steam Library. There are an error", tipo='E')
         self.__post_addGame()

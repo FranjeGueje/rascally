@@ -12,10 +12,7 @@
 #############################################################################################
 
 import os
-import glob
-import shutil
-from datetime import datetime
-from typing import Tuple,List
+from typing import Tuple
 
 # Importaciones util
 import util
@@ -30,7 +27,7 @@ util.logger.debug("Import module Engines")
 from .engines import LauncherEngine, BasicGame
 from . import engines
 util.logger.debug("Import module Steam utils")
-from .steam_core import add_steam_game, get_all_games, discard_installed_games
+from .steam_core import add_steam_game, get_all_games, discard_installed_games, open_game_properties
 util.logger.debug("Import module SteamGame")
 from .steam_core import SteamGame
 
@@ -122,6 +119,10 @@ class Rascally():
                     util.logger.error(f'[RASCALLY]Compatdata NOT clonned for the game {game.AppName} and ID {id}')
                     return 0
         return 0
+    
+    def openGameProperties(self, id: str):
+        util.logger.debug(f'[RASCALLY]Opening Steam the game with id {id}')
+        open_game_properties(id)
 
         
 #! Funciones de GridManager        

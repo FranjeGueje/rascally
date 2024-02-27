@@ -180,7 +180,8 @@ class LauncherEngine(ABC):
                 continue
             try:
                 logger.debug(f'[LauncherEngine.CLONE_BALANCED]Copying item: {source}/{item}')
-                result = _run_bash_command(command=f'rsync -av --no-links \"{source}/{item}\" \"{destination}\"')
+                dest_father = os.path.dirname(f'{destination}/{item}')
+                result = _run_bash_command(command=f'rsync -av --no-links \"{source}/{item}\" \"{dest_father}\"')
                 logger.debug(f'[LauncherEngine.CLONE_BALANCED]STDOUT:\n{result.stdout}')
                 logger.debug(f'[LauncherEngine.CLONE_BALANCED]STDERR:\n{result.stderr}')
             except:

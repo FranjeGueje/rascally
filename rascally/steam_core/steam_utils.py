@@ -98,3 +98,7 @@ def discard_installed_games(games: Tuple[SteamGame], jueguecitos: Tuple[SteamGam
     util.logger.info(
         "[RASCAL]Discarding the installed games from a list done.")
     return tuple(juegos)
+
+def open_game_properties(id: int) -> None:
+    util.logger.debug(f'[RASCAL]Opening game properties of {id}.)')
+    subprocess.run("xdg-open steam://gameproperties/" + str(id), shell=True)
