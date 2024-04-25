@@ -63,7 +63,7 @@ class EngineLink(LauncherEngine):
                 for file in os.listdir(path_lnk):
                     if file.endswith(".lnk"):
                         filename = os.path.splitext(file)[0]
-                        exe_completed = f'"{path_lnk}{file}"'
+                        exe_completed = f'{path_lnk}{file}'
                         logger.info(f'[EngineLink]Found this link in {exe_completed}')
                         g = BasicGame(
                             AppName=filename,

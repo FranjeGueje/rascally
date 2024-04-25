@@ -29,7 +29,7 @@ from rascally_ui.RascalDialog import RascalDialog
 from rascally import Rascally, LauncherEngine, BasicGame
 
 name = 'Rascally'
-version = '0.1.1'
+version = '0.1.2'
 
 class Rascally_UI(QMainWindow, Ui_Rascally, Rascally):
 

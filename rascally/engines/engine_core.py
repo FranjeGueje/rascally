@@ -63,4 +63,8 @@ class BasicGame():
 
 def _run_bash_command(command: str):
     # Ejecutar el comando bash y capturar la salida
-    return subprocess.run(command, shell=True, check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+    try:
+        return subprocess.run(command, shell=True, check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+    except subprocess.CalledProcessError as e:
+        return e
+    
