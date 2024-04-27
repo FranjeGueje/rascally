@@ -186,7 +186,7 @@ class Rascally():
         carpetas = [nombre for nombre in os.listdir(
             path) if os.path.isdir(os.path.join(path, nombre))]
         
-        if len(carpetas) == 2:
+        if len(carpetas) <= 2:
             for c in carpetas:
                 if c != '0':
                     return path + c + '/config/grid/'
