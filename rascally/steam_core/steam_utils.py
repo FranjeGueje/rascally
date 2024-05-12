@@ -95,6 +95,8 @@ def discard_installed_games(games: Tuple[SteamGame], jueguecitos: Tuple[SteamGam
         for j in jueguecitos:
             if i.Exe == j.Exe:
                 juegos.remove(i)
+            elif j.Exe.find(f'{i.AppName}.lnk') != -1: 
+                juegos.remove(i)
     util.logger.info(
         "[RASCAL]Discarding the installed games from a list done.")
     return tuple(juegos)

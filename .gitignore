@@ -2,6 +2,7 @@ build/
 dist/
 no/
 rascally_gui.spec
+rascally.spec
 __pycache__/
 */__pycache__/
 */*/__pycache__/
